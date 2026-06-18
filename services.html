@@ -1,0 +1,1206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Books & Services | Book Haven
+
+</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="./assets/css/style.css">
+
+<link rel="stylesheet"
+href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+
+<div class="container">
+
+<a class="navbar-brand"
+href="index.html">
+
+📖 Book Haven
+
+</a>
+
+<button
+class="navbar-toggler"
+
+data-bs-toggle="collapse"
+
+data-bs-target="#navMenu">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+<div class="collapse navbar-collapse"
+id="navMenu">
+
+<ul class="navbar-nav mx-auto">
+
+<li class="nav-item">
+<a class="nav-link"
+href="index.html">Home</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="about.html">About</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link active"
+href="services.html">Books</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="gallery.html">Gallery</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link"
+href="contact.html">Contact</a>
+</li>
+
+</ul>
+
+<button
+class="btn btn-dark position-relative"
+
+data-bs-toggle="modal"
+
+data-bs-target="#cartModal">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span
+id="cartCount"
+
+class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+0
+
+</span>
+
+</button>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<span class="hero-tag">
+
+PREMIUM COLLECTION
+
+</span>
+
+<h1>
+
+Our
+
+<span>
+
+Books
+
+</span>
+
+& Services
+
+</h1>
+
+<p>
+
+Explore our bestselling books and premium reading collections.
+
+</p>
+
+<a href="#books"
+class="btn btn-warning btn-lg">
+
+Browse Books
+
+</a>
+
+</div>
+
+<div class="col-lg-6 text-center">
+
+<img
+src="./assets/images/books/book-stack.png"
+
+class="img-fluid">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SEARCH ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="glass p-4 rounded-5">
+
+<div class="row">
+
+<div class="col-lg-10">
+
+<input
+type="text"
+
+class="form-control form-control-lg"
+
+placeholder="Search Books, Authors, Genres">
+
+</div>
+
+<div class="col-lg-2">
+
+<button
+class="btn btn-warning btn-lg w-100">
+
+Search
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="pb-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Book Categories
+
+</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-md-2">
+
+<div class="category-card">
+
+📚
+
+<h5>
+
+Fiction
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-2">
+
+<div class="category-card">
+
+❤️
+
+<h5>
+
+Romance
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-2">
+
+<div class="category-card">
+
+🧙
+
+<h5>
+
+Fantasy
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-2">
+
+<div class="category-card">
+
+💼
+
+<h5>
+
+Business
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-2">
+
+<div class="category-card">
+
+🔬
+
+<h5>
+
+Science
+
+</h5>
+
+</div>
+
+</div>
+
+<div class="col-md-2">
+
+<div class="category-card">
+
+🎓
+
+<h5>
+
+Education
+
+</h5>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+
+<section id="books" class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Popular Books
+
+</h2>
+
+</div>
+
+<div class="row g-4">
+
+
+<!-- Product 1 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book1.jpg">
+
+<div class="book-content">
+
+<h5>Atomic Habits</h5>
+
+<p>James Clear</p>
+
+<div class="price">₹499</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Atomic Habits',499)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 2 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book2.jpg">
+
+<div class="book-content">
+
+<h5>Ikigai</h5>
+
+<p>Hector Garcia</p>
+
+<div class="price">₹399</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Ikigai',399)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 3 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book3.jpg">
+
+<div class="book-content">
+
+<h5>Deep Work</h5>
+
+<p>Cal Newport</p>
+
+<div class="price">₹449</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Deep Work',449)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 4 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book4.jpg">
+
+<div class="book-content">
+
+<h5>Psychology of Money</h5>
+
+<p>Morgan Housel</p>
+
+<div class="price">₹599</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Psychology of Money',599)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 5 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book5.jpg">
+
+<div class="book-content">
+
+<h5>The Alchemist</h5>
+
+<p>Paulo Coelho</p>
+
+<div class="price">₹349</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('The Alchemist',349)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 6 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book6.jpg">
+
+<div class="book-content">
+
+<h5>Rich Dad Poor Dad</h5>
+
+<p>Robert Kiyosaki</p>
+
+<div class="price">₹399</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Rich Dad Poor Dad',399)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 7 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book7.jpg">
+
+<div class="book-content">
+
+<h5>Think Like A Monk</h5>
+
+<p>Jay Shetty</p>
+
+<div class="price">₹449</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Think Like A Monk',449)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 8 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book8.jpg">
+
+<div class="book-content">
+
+<h5>Zero To One</h5>
+
+<p>Peter Thiel</p>
+
+<div class="price">₹499</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Zero To One',499)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 9 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book9.jpg">
+
+<div class="book-content">
+
+<h5>Start With Why</h5>
+
+<p>Simon Sinek</p>
+
+<div class="price">₹479</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Start With Why',479)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Product 10 -->
+
+<div class="col-lg-4 col-md-6">
+
+<div class="book-card">
+
+<img src="./assets/images/books/book10.jpg">
+
+<div class="book-content">
+
+<h5>Digital Minimalism</h5>
+
+<p>Cal Newport</p>
+
+<div class="price">₹429</div>
+
+<button
+class="btn btn-warning"
+
+onclick="addToCart('Digital Minimalism',429)">
+
+Add To Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= MEMBERSHIP PLANS ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Membership Plans
+
+</h2>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="glass p-5 rounded-4 text-center">
+
+<h3>Basic</h3>
+
+<h1 class="gradient-text">₹99</h1>
+
+<p>Monthly</p>
+
+<ul class="list-unstyled">
+
+<li>✔ Book Discounts</li>
+<li>✔ Newsletter</li>
+<li>✔ Reading Lists</li>
+
+</ul>
+
+<button class="btn btn-warning">
+
+Choose Plan
+
+</button>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="glass p-5 rounded-4 text-center">
+
+<h3>Premium</h3>
+
+<h1 class="gradient-text">₹299</h1>
+
+<p>Monthly</p>
+
+<ul class="list-unstyled">
+
+<li>✔ Unlimited Discounts</li>
+<li>✔ Early Access</li>
+<li>✔ Premium Collection</li>
+<li>✔ Fast Delivery</li>
+
+</ul>
+
+<button class="btn btn-warning">
+
+Choose Plan
+
+</button>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="glass p-5 rounded-4 text-center">
+
+<h3>Elite</h3>
+
+<h1 class="gradient-text">₹599</h1>
+
+<p>Monthly</p>
+
+<ul class="list-unstyled">
+
+<li>✔ VIP Support</li>
+<li>✔ Signed Editions</li>
+<li>✔ Exclusive Events</li>
+
+</ul>
+
+<button class="btn btn-warning">
+
+Choose Plan
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= CUSTOMER REVIEWS ================= -->
+
+<section class="py-5 bg-light">
+
+<div class="container">
+
+<div class="text-center mb-5">
+
+<h2 class="section-title">
+
+Customer Reviews
+
+</h2>
+
+<p>
+
+Trusted by readers worldwide.
+
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="glass p-4 rounded-4 text-center">
+
+<img src="./assets/images/testimonials/user1.jpg"
+class="team-img mb-3">
+
+<h5>
+
+Aarav Sharma
+
+</h5>
+
+<p class="text-warning">
+
+★★★★★
+
+</p>
+
+<p>
+
+Amazing collection and very fast delivery.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="glass p-4 rounded-4 text-center">
+
+<img src="./assets/images/testimonials/user2.jpg"
+class="team-img mb-3">
+
+<h5>
+
+Sophia Lee
+
+</h5>
+
+<p class="text-warning">
+
+★★★★★
+
+</p>
+
+<p>
+
+Excellent service and premium book collection.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="glass p-4 rounded-4 text-center">
+
+<img src="./assets/images/testimonials/user3.jpg"
+class="team-img mb-3">
+
+<h5>
+
+David Wilson
+
+</h5>
+
+<p class="text-warning">
+
+★★★★★
+
+</p>
+
+<p>
+
+My favorite online bookstore for learning and growth.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="row text-center">
+
+<div class="col-md-3">
+
+<h2 class="gradient-text">
+
+1M+
+
+</h2>
+
+<p>
+
+Books Available
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="gradient-text">
+
+500K+
+
+</h2>
+
+<p>
+
+Readers
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="gradient-text">
+
+120+
+
+</h2>
+
+<p>
+
+Publishing Partners
+
+</p>
+
+</div>
+
+<div class="col-md-3">
+
+<h2 class="gradient-text">
+
+24H
+
+</h2>
+
+<p>
+
+Fast Delivery
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CART BILL MODAL ================= -->
+
+<div class="modal fade"
+id="cartModal">
+
+<div class="modal-dialog modal-lg">
+
+<div class="modal-content">
+
+<div class="modal-header">
+
+<h5 class="modal-title">
+
+Book Haven Bill
+
+</h5>
+
+<button
+class="btn-close"
+
+data-bs-dismiss="modal">
+
+</button>
+
+</div>
+
+<div class="modal-body">
+
+<table class="table">
+
+<thead>
+
+<tr>
+
+<th>Book</th>
+<th>Price</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="cartItems">
+
+</tbody>
+
+</table>
+
+<hr>
+
+<h3>
+
+Total Bill :
+₹<span id="cartTotal">
+
+0
+
+</span>
+
+</h3>
+
+<div class="mt-4">
+
+<input
+type="email"
+
+id="customerEmail"
+
+class="form-control"
+
+placeholder="Enter Email Address">
+
+<button
+onclick="generateBill()"
+
+class="btn btn-warning mt-3">
+
+Generate Bill
+
+</button>
+
+<button
+onclick="clearCart()"
+
+class="btn btn-danger mt-3">
+
+Clear Cart
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-4">
+
+<h3>
+
+📖 Book Haven
+
+</h3>
+
+<p>
+
+Premium online bookstore offering bestselling books and learning resources worldwide.
+
+</p>
+
+</div>
+
+<div class="col-lg-2">
+
+<h5>
+
+Quick Links
+
+</h5>
+
+<ul class="list-unstyled">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Books</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>
+
+Support
+
+</h5>
+
+<ul class="list-unstyled">
+
+<li>Help Center</li>
+<li>Privacy Policy</li>
+<li>Shipping</li>
+<li>FAQ</li>
+
+</ul>
+
+</div>
+
+<div class="col-lg-3">
+
+<h5>
+
+Follow Us
+
+</h5>
+
+<div class="d-flex gap-3">
+
+<i class="fab fa-facebook-f"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="text-center mb-0">
+
+© <span id="year"></span> Book Haven.
+All Rights Reserved.
+
+</p>
+
+</div>
+
+</footer>
+
+<!-- Floating Cart -->
+
+<div class="floating-cart"
+data-bs-toggle="modal"
+data-bs-target="#cartModal">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+</div>
+
+<!-- Back To Top -->
+
+<div id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</div>
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS -->
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<!-- Main JS -->
+
+<script src="./assets/js/main.js"></script>
+
+</body>
+
+</html>

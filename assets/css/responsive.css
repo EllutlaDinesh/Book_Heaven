@@ -1,0 +1,556 @@
+/* ===================================
+        LARGE DESKTOP
+=================================== */
+
+@media (min-width:1400px){
+
+.container{
+
+max-width:1320px;
+
+}
+
+.hero h1{
+
+font-size:80px;
+
+}
+
+}
+
+/* ===================================
+        LAPTOP
+=================================== */
+
+@media (max-width:1200px){
+
+.hero h1{
+
+font-size:58px;
+
+}
+
+.section-title{
+
+font-size:42px;
+
+}
+
+.book-stack img{
+
+width:160px;
+
+}
+
+}
+
+/* ===================================
+        TABLET
+=================================== */
+
+@media (max-width:992px){
+
+.custom-navbar{
+
+padding:12px 0;
+
+}
+
+.navbar-collapse{
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+margin-top:15px;
+
+box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.nav-link{
+
+margin:10px 0;
+
+}
+
+.hero{
+
+text-align:center;
+
+padding-top:140px;
+
+padding-bottom:100px;
+
+}
+
+.hero h1{
+
+font-size:52px;
+
+}
+
+.hero p{
+
+margin:auto;
+
+margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+}
+
+.book-stack{
+
+margin-top:50px;
+
+}
+
+.stats-section{
+
+margin-top:30px;
+
+}
+
+.stat-card{
+
+margin-bottom:25px;
+
+}
+
+}
+
+/* ===================================
+        MOBILE
+=================================== */
+
+@media (max-width:768px){
+
+.hero{
+
+min-height:auto;
+
+padding-top:130px;
+
+padding-bottom:80px;
+
+}
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.hero .btn{
+
+width:100%;
+
+max-width:280px;
+
+}
+
+.book-stack{
+
+flex-wrap:wrap;
+
+gap:10px;
+
+}
+
+.book-stack img{
+
+width:120px;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+.category-card{
+
+padding:25px;
+
+font-size:32px;
+
+}
+
+.stat-card{
+
+padding:25px;
+
+}
+
+.book-card{
+
+margin-bottom:25px;
+
+}
+
+.best-card{
+
+margin-bottom:20px;
+
+}
+
+.arrival-card{
+
+margin-bottom:20px;
+
+}
+
+footer{
+
+text-align:center;
+
+}
+
+footer .col-lg-3{
+
+margin-bottom:35px;
+
+}
+
+.floating-cart{
+
+width:58px;
+
+height:58px;
+
+right:18px;
+
+bottom:18px;
+
+}
+
+#topBtn{
+
+left:18px;
+
+bottom:18px;
+
+width:50px;
+
+height:50px;
+
+}
+
+}
+
+/* ===================================
+        SMALL MOBILE
+=================================== */
+
+@media (max-width:576px){
+
+.hero h1{
+
+font-size:34px;
+
+}
+
+.hero-tag{
+
+font-size:11px;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.navbar-brand{
+
+font-size:24px;
+
+}
+
+.book-stack img{
+
+width:95px;
+
+}
+
+.category-card{
+
+padding:20px;
+
+}
+
+.category-card h5{
+
+font-size:17px;
+
+}
+
+.book-content{
+
+padding:15px;
+
+}
+
+.price{
+
+font-size:20px;
+
+}
+
+.stat-card h2{
+
+font-size:28px;
+
+}
+
+}
+
+/* ===================================
+        EXTRA SMALL
+=================================== */
+
+@media (max-width:400px){
+
+.hero{
+
+padding-top:110px;
+
+}
+
+.hero h1{
+
+font-size:28px;
+
+}
+
+.hero p{
+
+font-size:15px;
+
+}
+
+.section-title{
+
+font-size:26px;
+
+}
+
+.hero .btn{
+
+padding:12px 20px;
+
+}
+
+.book-stack img{
+
+width:82px;
+
+}
+
+.floating-cart{
+
+width:52px;
+
+height:52px;
+
+font-size:20px;
+
+}
+
+#topBtn{
+
+width:45px;
+
+height:45px;
+
+}
+
+}
+
+/* ===================================
+        LANDSCAPE MOBILE
+=================================== */
+
+@media (max-height:500px){
+
+.hero{
+
+padding-top:120px;
+
+padding-bottom:70px;
+
+min-height:auto;
+
+}
+
+}
+
+/* ===================================
+        IMAGE RESPONSIVE
+=================================== */
+
+img{
+
+max-width:100%;
+
+height:auto;
+
+display:block;
+
+}
+
+/* ===================================
+        TABLE RESPONSIVE
+=================================== */
+
+table{
+
+width:100%;
+
+overflow:auto;
+
+display:block;
+
+}
+
+/* ===================================
+        IFRAME
+=================================== */
+
+iframe{
+
+width:100%;
+
+border:0;
+
+}
+
+/* ===================================
+        FORM
+=================================== */
+
+input,
+textarea,
+select{
+
+width:100%;
+
+}
+
+/* ===================================
+        GRID SPACING
+=================================== */
+
+.row{
+
+row-gap:20px;
+
+}
+
+/* ===================================
+        CARD SPACING
+=================================== */
+
+.book-card,
+.arrival-card,
+.best-card,
+.category-card{
+
+height:100%;
+
+}
+
+/* ===================================
+        BUTTONS
+=================================== */
+
+.btn{
+
+white-space:nowrap;
+
+}
+
+/* ===================================
+        NEWSLETTER
+=================================== */
+
+.newsletter-box{
+
+padding:35px 25px;
+
+}
+
+/* ===================================
+        GALLERY
+=================================== */
+
+.gallery-item img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+/* ===================================
+        SWIPER
+=================================== */
+
+.swiper{
+
+overflow:hidden;
+
+}
+
+/* ===================================
+        FOOTER
+=================================== */
+
+.footer-links{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+justify-content:center;
+
+}
+
+/* ===================================
+        SMOOTH
+=================================== */
+
+html{
+
+scroll-behavior:smooth;
+
+}

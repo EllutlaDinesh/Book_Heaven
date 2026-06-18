@@ -1,0 +1,535 @@
+/* ===========================
+   FADE UP
+=========================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+.fade-up.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ===========================
+   FLOATING
+=========================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+.float{
+
+    animation:floating 4s ease-in-out infinite;
+
+}
+
+/* ===========================
+   HERO IMAGE
+=========================== */
+
+.hero img{
+
+    animation:floating 5s ease infinite;
+
+}
+
+/* ===========================
+   BUTTON GLOW
+=========================== */
+
+.glow-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.glow-btn::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-100%;
+
+    width:100%;
+
+    height:100%;
+
+    background:linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255,255,255,.5),
+
+        transparent
+
+    );
+
+    transition:.8s;
+
+}
+
+.glow-btn:hover::before{
+
+    left:100%;
+
+}
+
+/* ===========================
+   BOOK HOVER
+=========================== */
+
+.book-card{
+
+    transform-style:preserve-3d;
+
+}
+
+.book-card:hover{
+
+    transform:
+
+    perspective(1000px)
+
+    rotateX(4deg)
+
+    rotateY(-4deg)
+
+    translateY(-12px);
+
+}
+
+/* ===========================
+   IMAGE ZOOM
+=========================== */
+
+.zoom{
+
+    overflow:hidden;
+
+}
+
+.zoom img{
+
+    transition:.7s;
+
+}
+
+.zoom:hover img{
+
+    transform:scale(1.12);
+
+}
+
+/* ===========================
+   CARD SHINE
+=========================== */
+
+.shine{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.shine::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-130%;
+
+    width:60%;
+
+    height:100%;
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    transparent,
+
+    rgba(255,255,255,.4),
+
+    transparent);
+
+    transform:skewX(-20deg);
+
+}
+
+.shine:hover::before{
+
+    left:150%;
+
+    transition:1s;
+
+}
+
+/* ===========================
+   SCALE
+=========================== */
+
+.scale{
+
+    transition:.5s;
+
+}
+
+.scale:hover{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   ROTATE
+=========================== */
+
+.rotate:hover{
+
+    transform:rotate(-2deg);
+
+    transition:.5s;
+
+}
+
+/* ===========================
+   GRADIENT TEXT
+=========================== */
+
+.gradient-text {
+    background: linear-gradient(45deg, #D4AF37, #E9D27A, #B98A00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===========================
+   GLASS CARD
+=========================== */
+
+.glass{
+
+    background:rgba(255,255,255,.6);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.3);
+
+}
+
+/* ===========================
+   FLOATING SHADOW
+=========================== */
+
+.shadow-hover{
+
+    transition:.5s;
+
+}
+
+.shadow-hover:hover{
+
+    box-shadow:
+
+    0 30px 50px rgba(0,0,0,.15);
+
+}
+
+/* ===========================
+   ICON BOUNCE
+=========================== */
+
+.icon-hover{
+
+    transition:.4s;
+
+}
+
+.icon-hover:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ===========================
+   PAGE LOADER
+=========================== */
+
+.loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:white;
+
+    z-index:99999;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.loader::after{
+
+    content:"";
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:8px solid #eee;
+
+    border-top:8px solid #D4AF37;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================
+   SCROLL INDICATOR
+=========================== */
+
+.scroll-indicator{
+
+    animation:scrollMove 2s infinite;
+
+}
+
+@keyframes scrollMove{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+   MARQUEE
+=========================== */
+
+.marquee{
+
+    overflow:hidden;
+
+    white-space:nowrap;
+
+}
+
+.marquee-content{
+
+    display:inline-block;
+
+    animation:marquee 25s linear infinite;
+
+}
+
+@keyframes marquee{
+
+    from{
+
+        transform:translateX(100%);
+
+    }
+
+    to{
+
+        transform:translateX(-100%);
+
+    }
+
+}
+
+/* ===========================
+   FADE LEFT
+=========================== */
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-left{
+
+    animation:fadeLeft 1s;
+
+}
+
+/* ===========================
+   FADE RIGHT
+=========================== */
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(60px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
+
+.fade-right{
+
+    animation:fadeRight 1s;
+
+}
+
+/* ===========================
+   PULSE
+=========================== */
+
+@keyframes pulse{
+
+    50%{
+
+        transform:scale(1.05);
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* ===========================
+   FOOTER SOCIAL
+=========================== */
+
+.social-hover{
+
+    transition:.4s;
+
+}
+
+.social-hover:hover{
+
+    color:#D4AF37;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+   NEWSLETTER
+=========================== */
+
+.newsletter-box:hover{
+
+    transform:translateY(-8px);
+
+    transition:.4s;
+
+}
+
+/* ===========================
+   BACK TO TOP
+=========================== */
+
+#topBtn:hover{
+
+    transform:translateY(-5px);
+
+    transition:.4s;
+
+}
